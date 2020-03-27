@@ -1,0 +1,48 @@
+
+alias gb='git branch'
+alias gs='git status'
+alias ga='git add'
+alias gc='git commit'
+alias gl='git log'
+alias glo='git log --pretty=oneline'
+alias glu="git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short"
+alias glg="git log --decorate --graph --abbrev-commit --date=relative"
+alias gh='git checkout'
+alias gt='git tag'
+alias grs='git reset'
+alias grv='git revert'
+alias gm='git merge'
+alias gd='git diff'
+alias gp='git push'
+alias gpo='git push origin'
+alias gob='git checkout -b'
+alias gh='cat .git/HEAD'
+alias grgu='git remote get-url'
+
+alias gbb="git for-each-ref --sort=-committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'"
+alias gbbb="git for-each-ref --sort=-committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'"
+
+#another set
+
+# git aliases
+alias gc='git checkout'
+alias gcm='git commit -m'
+alias gs='git status'
+alias ga='git add --all'
+alias gp='git pull --rebase'
+alias gb='git branch -vv'
+alias gr='git remote -v'
+alias grt='git reset --hard'
+alias gpub='git push origin publish'
+alias grp='git rebase publish'
+alias gdev='git push origin dev'
+alias gd='git branch -D'
+alias gm='git merge'
+alias gmx='git merge -X theirs'
+alias gh='git push hozefa'
+alias gk='gitk &'
+alias gda='git branch | grep -v "develop" | grep -v "release" | xargs git branch -D'
+alias gf='git fetch'
+alias gl='git log -3'
+# cleans all branches locally that have already been merged.
+alias gcmb="git branch --merged | grep -Ev '(^\*|develop)' | xargs git branch -d"
